@@ -26,8 +26,15 @@ using UdemyMvcApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Views\_ViewImports.cshtml"
+using UdemyMvcApp.Models.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2f5d525ca6e0163489e3779e3c47486e565c4387", @"/Views/Application/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3c9a4f412775f13610b9ded70f5f14391172aadc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8208601fae19bdc7432ef4cb043f3b40c028c9d6", @"/Views/_ViewImports.cshtml")]
     public class Views_Application_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Application>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -70,7 +77,7 @@ using UdemyMvcApp.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<div class = \"container p-3\">\r\n    <div class= \"row p-4\">\r\n     <div class=\"col-6\">\r\n           <h2 class =\"text-primary\">Application List</h2>\r\n     </div>\r\n       <div class = \"col-6 text--right\">\r\n         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c43875827", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c43876022", async() => {
                 WriteLiteral("\r\n          <i class=\"fas fa-plus\"></i> &nbsp; Create New Application\r\n         ");
             }
             );
@@ -122,7 +129,7 @@ using UdemyMvcApp.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                   \r\n\r\n                    <td class = \"text-center\">\r\n                        <div class = \"w-75 btn-group\" role = \"group\">\r\n                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c43878463", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c43878658", async() => {
                 WriteLiteral("\r\n                             <i class=\"fas fa-edit\"></i> &nbsp; \r\n                             ");
             }
             );
@@ -156,7 +163,7 @@ using UdemyMvcApp.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                              ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c438711057", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f5d525ca6e0163489e3779e3c47486e565c438711252", async() => {
                 WriteLiteral("\r\n                               <i class=\"fas fa-trash-alt\"></i> &nbsp; \r\n                                ");
             }
             );

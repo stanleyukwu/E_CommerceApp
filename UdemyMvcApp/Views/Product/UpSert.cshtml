@@ -1,17 +1,17 @@
-﻿@model Product
+﻿@model ProductVM
 @{
-    var title = "Create product";
+    var title = "Create Product";
 }
 
-<form method = "post" asp-action="UpSert">
-    @if(Model.Id != 0)
+<form method = "post" enctype = "multipart/form-data">
+    @if(Model.Product.Id != 0)
     {
         title = "Edit Product";
-        <input asp-for ="Id" class = "hidden"/>
+        <input asp-for ="Product.Id" class = "hidden"/>
     }
-    
+   
     <div class ="border p-3">
-        
+        @*<div asp-validation-summary = "ModelOnly" class = "text-danger"></div>*@
 
         <div class = "form-group row">
             <h2 class = "text-info pl-3">@title</h2>
@@ -20,79 +20,84 @@
             <div class="col-8">
                 <div class="form-group row">
                     <div class="col-4">
-                       <label asp-for =" Name"></label>
+                       <label asp-for =" Product.Name"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for = "Name" class = "form-control"/>
-                        <span asp-validation-for = "Name" class = "text-danger"></span>
+                        <input asp-for = "Product.Name" class = "form-control"/>
+                        <span asp-validation-for = "Product.Name" class = "text-danger"></span>
                     </div>
 
                 </div>
-
+               @* Price*@
                 <div class="form-group row">
+
                     <div class="col-4">
-                       <label asp-for = " Price"></label>
+                       <label asp-for = "Product.Price"></label>
                     </div>
                     <div class="col-8">
-                       <input asp-for = "Price" class = "form-control"/>
-                       <span asp-validation-for = "Price" class = "text-danger"></span>
+                       <input asp-for = "Product.Price" class = "form-control"/>
+                       <span asp-validation-for = "Product.Price" class = "text-danger"></span>
                     </div>
 
                 </div>
 
+              @*  Description*@
+               <div class="form-group row">
+
+                    <div class="col-4">
+                       <label asp-for = "Product.Description"></label>
+                    </div>
+                    <div class="col-8">
+                       <textarea asp-for = "Product.Description"  class = "form-control summernote"></textarea>
+                       <span asp-validation-for = "Product.Description" class = "text-danger"></span>
+                    </div>
+
+                </div>
+
+               @* input file*@
                 <div class="form-group row">
+
                     <div class="col-4">
-                       <label asp-for = " Description"></label>
+                     Image
                     </div>
                     <div class="col-8">
-                       <input asp-for = "Description" class = "form-control"/>
-                       <span asp-validation-for = "Description" class = "text-danger"></span>
+                       <input type = "file" name ="files" id = "uploadBox" multiple asp-for = "Product.Image" class = "form-control"/>                     
                     </div>
 
                 </div>
 
-                <div class="form-group row">
-                    <div class="col-4">
-                      Image
-                    </div>
-                    <div class="col-8">
-                       <input type = "file" name = "files" multiple asp-for = "Image" class = "form-control"/>
-                    </div>
-                </div>
+                 @*  DropDown*@
+               <div class="form-group row">
 
-                 <div class="form-group row">
                     <div class="col-4">
-                       <label asp-for = " CategoryId"></label>
+                       <label asp-for = "Product.CategoryId"></label>
                     </div>
                     <div class="col-8">
-                      <select asp-for ="CategoryId" asp-items = "@ViewBag.CategoryDropDown" class = "form-control"/>
-                      <option selected>---Select Category---</option>
-                       <span asp-validation-for = "CategoryId" class = "text-danger"></span>
+                      <select asp-for = "Product.CategoryId"  asp-items = "@Model.CategorySelectList" class = "form-control">
+                          <option disabled selected>---Select Category---</option>
+                      </select>
+                       <span asp-validation-for = "Product.CategoryId" class = "text-danger"></span>
                     </div>
 
                 </div>
 
-                
                 <div class="form-group row">
                     <div class="col-8 offset-4 row">
 
                         <div class="col">
-                            @if(Model.Id != 0)
+                            @if(Model.Product.Id != 0)
                             {
-                                //Edit
-                                <input type = "submit" class =" btn btn-info w-50"  value = "Update" />
+                               //Edit
+                                <input type = "submit" class =" btn btn-info w-100"  value = "Update" />
                             }
                             else
                             {
-                                //Create
-                                <input type = "submit" onclick ="return validationInput()" class =" btn btn-success w-50" value = "Create" />
-                               
-                            } 
-                            
-                        </div>
-                        <div class="col offset-4">
+                                <input type = "submit" onclick = "return validateInput()" class =" btn btn-primary w-100"  value = "Create" />
+                            }
                            
-                          <a asp-action = "Index" class = "btn btn-primary w-50 "> <i class="fas fa-sign-out-alt"></i>Back</a>                        
+                        </div>
+                        <div class="col">
+                            <a asp-action = "Index" class = "btn btn-success w-100 ">Back</a>                           
                         </div>
                     </div>
                 </div>
@@ -106,5 +111,27 @@
 
 @section scripts{
     @{<partial name = "_ValidationScriptsPartial" />}
+
+    
     }
+    <script>
+   $(document).ready(function() {
+        $('.summernote').summernote();
+    });
+    function validateInput(){
+        if(document.getElementById("uploadBox").value == ""){
+            Swal.fire(
+                   "error!",
+                  "Please upload an image!",
+                   "error"
+                     )
+                     return false;
+                      }
+                      else{
+                          return true;
+                      }
+                      
+
+                        }
+    </script>
 
