@@ -14,5 +14,7 @@ namespace UdemyMvcApp.DataStore
         public DbSet<Category> Categories { get; set; }
         public DbSet<Application> Applications { get; set; }
         public DbSet<Product> Products { get; set; }
+       
+       
     }
 }

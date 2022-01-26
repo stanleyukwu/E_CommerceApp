@@ -99,7 +99,6 @@ namespace UdemyMvcApp.Controllers
             {
                 return NotFound();
             }
-               
                 _ctxt.Categories.Remove(obj);
                 _ctxt.SaveChanges();
             return RedirectToAction("Index");
