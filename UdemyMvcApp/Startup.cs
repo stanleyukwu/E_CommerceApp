@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UdemyMvcApp.DataStore;
+using UdemyMvcApp.Utility;
 
 namespace UdemyMvcApp
 {
@@ -34,7 +36,8 @@ namespace UdemyMvcApp
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<AppDbContext>();
             services.AddHttpContextAccessor();
-            
+
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(10);

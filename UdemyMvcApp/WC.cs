@@ -7,5 +7,6 @@
 
         public static string AdminRole = "AdminRole"; 
         public static string CustomerRole = "CustomerRole";
+        public static string AdminEmail = "stanleyjekwu16@gmail.com";
     }
 }

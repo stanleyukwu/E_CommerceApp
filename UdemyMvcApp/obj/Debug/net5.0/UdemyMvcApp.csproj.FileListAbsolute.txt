@@ -349,7 +349,6 @@ C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\bin\Debug\net5.0\runtimes\wi
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\UdemyMvcApp.csproj.AssemblyReference.cache
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\UdemyMvcApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\UdemyMvcApp.AssemblyInfoInputs.cache
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\UdemyMvcApp.AssemblyInfo.cs
@@ -487,3 +486,8 @@ C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Areas
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Views\Cart\Summary.cshtml.g.cs
+C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\bin\Debug\net5.0\Mailjet.Client.dll
+C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\Razor\Views\Cart\InquiryConfiirmation.cshtml.g.cs
+C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\obj\Debug\net5.0\UdemyMvcApp.csproj.AssemblyReference.cache
