@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using Rocky_Utility.Models;
 using Rocky_DataAccess.DataStore;
+using Rocky_DataAccess.DataStore.Repository.Interface;
 
 namespace Rocky_Utility.Controllers
 {
     public class ApplicationController : Controller
     {
-        private readonly AppDbContext _cxt;
+    
+        private IApplicationRepo _app;
 
-        public ApplicationController(AppDbContext appDbContext)
+        public ApplicationController(IApplicationRepo app)
         {
-            _cxt = appDbContext;
+            _app = app;
+
         }
         public IActionResult Index()
         {
-            List<Application> Applications = _cxt.Applications.ToList();
+            IEnumerable<Application> Applications = _app.GetAll();
             return View(Applications);
         }
 
@@ -31,8 +34,8 @@ namespace Rocky_Utility.Controllers
         [ValidateAntiForgeryToken]
             public IActionResult Create(Application app)
             {
-            _cxt.Applications.Add(app);
-            _cxt.SaveChanges();
+            _app.Add(app);
+            _app.Save();
 
             return RedirectToAction("Index");
             }
@@ -44,7 +47,7 @@ namespace Rocky_Utility.Controllers
             {
                 return NotFound();
             }
-            var app = _cxt.Applications.Find(Id);
+            var app = _app.Find(Id.GetValueOrDefault());
             if(app == null)
             {
                 return NotFound();
@@ -59,8 +62,8 @@ namespace Rocky_Utility.Controllers
         {
             if (ModelState.IsValid)
             {
-                _cxt.Applications.Update(app);
-                _cxt.SaveChanges();
+                _app.Update(app);
+                _app.Save();
 
                 return RedirectToAction("Index");
             }
@@ -74,7 +77,7 @@ namespace Rocky_Utility.Controllers
             {
                 return NotFound();
             }
-            var app = _cxt.Applications.Find(Id);
+            var app = _app.Find(Id.GetValueOrDefault());
             if (app == null)
             {
                 return NotFound();
@@ -87,11 +90,11 @@ namespace Rocky_Utility.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? Id)
         {
-            var obj = _cxt.Applications.Find(Id);
+            var obj = _app.Find(Id.GetValueOrDefault());
             if(obj != null)
             {
-                _cxt.Applications.Remove(obj);
-                _cxt.SaveChanges();
+                _app.Remove(obj);
+                _app.Save();
                 return RedirectToAction("Index");
             }
             return NotFound();

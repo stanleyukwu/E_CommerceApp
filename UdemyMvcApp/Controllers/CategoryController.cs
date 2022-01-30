@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using Rocky_Utility.Models;
 using Rocky_DataAccess.DataStore;
+using Rocky_DataAccess.DataStore.Repository.Implementation;
+using Rocky_DataAccess.DataStore.Repository.Interface;
 
 namespace Rocky_Utility.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly AppDbContext _ctxt;
+        private readonly ICategoryRepo _catRepo;
+     
 
-        public CategoryController(AppDbContext appDbContext)
+        public CategoryController(ICategoryRepo catRepo)
         {
-            _ctxt = appDbContext;
+            _catRepo = catRepo;
+          
         }
         public IActionResult Index()
         {
-            List<Category> Categories = _ctxt.Categories.ToList(); ;
+            IEnumerable<Category> Categories = _catRepo.GetAll();
 
             return View(Categories);
         }
@@ -34,8 +38,8 @@ namespace Rocky_Utility.Controllers
         {
             if (ModelState.IsValid)
             {
-                _ctxt.Categories.Add(cat);
-                _ctxt.SaveChanges();
+                _catRepo.Add(cat);
+                _catRepo.Save();
 
                 return RedirectToAction("Index");
             }
@@ -50,7 +54,7 @@ namespace Rocky_Utility.Controllers
             {
                 return NotFound();
             }
-            var obj = _ctxt.Categories.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
             if(obj == null)
             {
                 return NotFound();
@@ -65,8 +69,8 @@ namespace Rocky_Utility.Controllers
         {
             if (ModelState.IsValid)
             {
-                _ctxt.Categories.Update(cat);
-                _ctxt.SaveChanges();
+                _catRepo.Update(cat);
+                _catRepo.Save();
 
                 return RedirectToAction("Index");
             }
@@ -81,26 +85,25 @@ namespace Rocky_Utility.Controllers
             {
                 return NotFound();
             }
-            var obj = _ctxt.Categories.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
             if (obj == null)
             {
                 return NotFound();
             }
             return View(obj);
         }
-
         //Post: Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult DeletePost(int? Id)
         {
-            var obj = _ctxt.Categories.Find(Id);
+            var obj = _catRepo.Find(Id.GetValueOrDefault());
            if(obj == null)
             {
                 return NotFound();
             }
-                _ctxt.Categories.Remove(obj);
-                _ctxt.SaveChanges();
+            _catRepo.Remove(obj);
+            _catRepo.Save();
             return RedirectToAction("Index");
            
         }

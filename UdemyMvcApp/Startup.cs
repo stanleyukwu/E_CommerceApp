@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Rocky_DataAccess.DataStore;
+using Rocky_DataAccess.DataStore.Repository.Implementation;
+using Rocky_DataAccess.DataStore.Repository.Interface;
 using System;
 
 namespace Rocky_Utility
@@ -31,6 +33,7 @@ namespace Rocky_Utility
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<AppDbContext>();
             services.AddHttpContextAccessor();
+          
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddSession(options =>
@@ -40,6 +43,9 @@ namespace Rocky_Utility
                 options.Cookie.IsEssential = true;
 
             });
+            services.AddScoped<ICategoryRepo,Categoryrepository>();
+            services.AddScoped<IApplicationRepo, ApplicationRepo>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
