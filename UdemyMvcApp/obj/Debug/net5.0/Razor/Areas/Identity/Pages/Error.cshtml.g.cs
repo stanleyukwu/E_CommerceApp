@@ -21,20 +21,20 @@ using Microsoft.AspNetCore.Identity;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity;
+using Rocky_Utility.Areas.Identity;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages;
+using Rocky_Utility.Areas.Identity.Pages;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f6ebae86d40004d00768c35aea29f9fd0820dc4a", @"/Areas/Identity/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e76de9a6fb01c246c3b3e7755e3851bf31ce5278", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b53c55603ba7ddd96ff73b59e20b50d67bf2e41", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

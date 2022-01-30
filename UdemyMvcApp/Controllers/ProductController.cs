@@ -6,11 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using UdemyMvcApp.DataStore;
-using UdemyMvcApp.Models;
-using UdemyMvcApp.Models.ViewModel;
+using Rocky_Utility.Models;
+using Rocky_Model.ViewModel;
+using Rocky_DataAccess.DataStore;
 
-namespace UdemyMvcApp.Controllers
+namespace Rocky_Utility.Controllers
 {
     public class ProductController : Controller
     {
@@ -43,17 +43,17 @@ namespace UdemyMvcApp.Controllers
 
             ProductVM ProductVM = new ProductVM()
             {
+                ApplicationSelectList = _ctxt.Applications.Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Id.ToString()
+                }),
                 Product = new Product(),
                 CategorySelectList = _ctxt.Categories.Select(x => new SelectListItem
                 {
                     Text = x.Name,
                     Value = x.Id.ToString()
-                }),
-                ApplicationSelectList = _ctxt.Applications.Select(x => new SelectListItem
-                {
-                    Text = x.Name,
-                    Value = x.Id.ToString()
-                })
+                }) 
             };
            
             if(Id == null)
@@ -132,17 +132,17 @@ namespace UdemyMvcApp.Controllers
                 _ctxt.SaveChanges();
                 return RedirectToAction("Index");
             }
-            productVM.CategorySelectList = _ctxt.Categories.Select(x => new SelectListItem
+            productVM.CategorySelectList = (_ctxt.Categories.Select(x => new SelectListItem
             {
                 Text = x.Name,
                 Value = x.Id.ToString()
-            });
+            }));
 
-            productVM.ApplicationSelectList = _ctxt.Applications.Select(x => new SelectListItem
+            productVM.ApplicationSelectList = (_ctxt.Applications.Select(x => new SelectListItem
             {
                 Text = x.Name,
                 Value = x.Id.ToString()
-            });
+            }));
             return View(productVM);
        
         }

@@ -21,36 +21,36 @@ using Microsoft.AspNetCore.Identity;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity;
+using Rocky_Utility.Areas.Identity;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages;
+using Rocky_Utility.Areas.Identity.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 1 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\Account\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages.Account;
+using Rocky_Utility.Areas.Identity.Pages.Account;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 1 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages.Account.Manage;
+using Rocky_Utility.Areas.Identity.Pages.Account.Manage;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e8902742d86a79bd00b0f462ec1ac9ba44cf7588", @"/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e76de9a6fb01c246c3b3e7755e3851bf31ce5278", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"aefe18c262ad979f1fb274152f2ff5cead097f99", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a26c3ec50294e0bca30694563c6003c428bbfe4", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b53c55603ba7ddd96ff73b59e20b50d67bf2e41", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"63443729108bf21a0ea27cd5ef6d65bbd6c9f5da", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dc9d4e47c03d5e1d7fe33fada14659aef0513663", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_Manage_ShowRecoveryCodes : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_StatusMessage", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -88,7 +88,7 @@ using UdemyMvcApp.Areas.Identity.Pages.Account.Manage;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e8902742d86a79bd00b0f462ec1ac9ba44cf75884981", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e8902742d86a79bd00b0f462ec1ac9ba44cf75884989", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

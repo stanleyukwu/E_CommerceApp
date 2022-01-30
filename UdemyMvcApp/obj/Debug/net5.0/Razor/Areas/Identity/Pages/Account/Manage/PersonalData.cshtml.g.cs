@@ -21,36 +21,36 @@ using Microsoft.AspNetCore.Identity;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity;
+using Rocky_Utility.Areas.Identity;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages;
+using Rocky_Utility.Areas.Identity.Pages;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 1 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\Account\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages.Account;
+using Rocky_Utility.Areas.Identity.Pages.Account;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 1 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml"
-using UdemyMvcApp.Areas.Identity.Pages.Account.Manage;
+using Rocky_Utility.Areas.Identity.Pages.Account.Manage;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"65755186d74c449a5d1168061a19ca135d7c8024", @"/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e76de9a6fb01c246c3b3e7755e3851bf31ce5278", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"aefe18c262ad979f1fb274152f2ff5cead097f99", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a26c3ec50294e0bca30694563c6003c428bbfe4", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2b53c55603ba7ddd96ff73b59e20b50d67bf2e41", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"63443729108bf21a0ea27cd5ef6d65bbd6c9f5da", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dc9d4e47c03d5e1d7fe33fada14659aef0513663", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_Manage_PersonalData : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("download-data"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -114,7 +114,7 @@ Write(ViewData["Title"]);
             <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
         </p>
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65755186d74c449a5d1168061a19ca135d7c80248289", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65755186d74c449a5d1168061a19ca135d7c80248297", async() => {
                 WriteLiteral("\r\n            <button class=\"btn btn-primary\" type=\"submit\">Download</button>\r\n        ");
             }
             );
@@ -136,7 +136,7 @@ Write(ViewData["Title"]);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        <p>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65755186d74c449a5d1168061a19ca135d7c802410202", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65755186d74c449a5d1168061a19ca135d7c802410210", async() => {
                 WriteLiteral("Delete");
             }
             );
@@ -156,7 +156,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n        </p>\r\n    </div>\r\n</div>\r\n\r\n");
             DefineSection("Scripts", async() => {
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "65755186d74c449a5d1168061a19ca135d7c802411664", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "65755186d74c449a5d1168061a19ca135d7c802411672", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

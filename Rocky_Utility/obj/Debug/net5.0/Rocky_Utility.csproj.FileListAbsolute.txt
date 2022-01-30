@@ -1,0 +1,15 @@
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\Rocky_Utility.deps.json
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\Rocky_Utility.dll
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\ref\Rocky_Utility.dll
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\Rocky_Utility.pdb
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\Rocky_Model.dll
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\bin\Debug\net5.0\Rocky_Model.pdb
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.csproj.AssemblyReference.cache
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.AssemblyInfoInputs.cache
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.AssemblyInfo.cs
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.csproj.CoreCompileInputs.cache
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.csproj.CopyComplete
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.dll
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\ref\Rocky_Utility.dll
+C:\Users\decag\source\repos\UdemyMvcApp\Rocky_Utility\obj\Debug\net5.0\Rocky_Utility.pdb

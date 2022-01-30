@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using UdemyMvcApp.DataStore;
+using Rocky_DataAccess.DataStore;
 
-[assembly: HostingStartup(typeof(UdemyMvcApp.Areas.Identity.IdentityHostingStartup))]
-namespace UdemyMvcApp.Areas.Identity
+[assembly: HostingStartup(typeof(Rocky_Utility.Areas.Identity.IdentityHostingStartup))]
+namespace Rocky_Utility.Areas.Identity
 {
     public class IdentityHostingStartup : IHostingStartup
     {

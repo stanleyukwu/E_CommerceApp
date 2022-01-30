@@ -14,34 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Views\_ViewImports.cshtml"
-using UdemyMvcApp;
+using Rocky_Utility;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Views\_ViewImports.cshtml"
-using UdemyMvcApp.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 3 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Views\_ViewImports.cshtml"
-using UdemyMvcApp.Models.ViewModel;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Users\decag\source\repos\UdemyMvcApp\UdemyMvcApp\Views\_ViewImports.cshtml"
-using UdemyMvcApp.Utility;
+using Rocky_Utility.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e07364407e2bbe41d164b67e6523bc6976819693", @"/Views/Cart/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"92d9585bf50100336f91bcdce6b06cfff61821bf", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"bee4944394f1e9610e3a8c3e7872e36418d57d02", @"/Views/_ViewImports.cshtml")]
     public class Views_Cart_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -83,7 +69,7 @@ using UdemyMvcApp.Utility;
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc69768196935805", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc69768196935428", async() => {
                 WriteLiteral(@"
     <br />
     <div class=""backgroundWhiteBorder"">
@@ -97,7 +83,7 @@ using UdemyMvcApp.Utility;
                         </div>
                         <div class=""col-6 text-right"">
                             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc69768196936604", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc69768196936227", async() => {
                     WriteLiteral("Continue Shopping");
                 }
                 );
@@ -186,7 +172,7 @@ WriteAttributeValue("", 1861, obj.Image, 1861, 10, false);
 #line hidden
 #nullable disable
                 WriteLiteral("</span>/ sqft\r\n\r\n                            </div>\r\n                            <div class=\"col-2 col-lg-1 p-0 pt-lg-4 text-center\">\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc697681969311493", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07364407e2bbe41d164b67e6523bc697681969311116", async() => {
                     WriteLiteral("\r\n                                    <i class=\"fas fa-trash\"></i>\r\n                                ");
                 }
                 );

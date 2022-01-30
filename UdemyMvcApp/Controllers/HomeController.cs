@@ -2,17 +2,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using UdemyMvcApp.DataStore;
-using UdemyMvcApp.Models;
-using UdemyMvcApp.Models.ViewModel;
-using UdemyMvcApp.Utility;
+using Rocky_Utility.Models;
+using Rocky_Model.ViewModel;
+using Rocky_DataAccess.DataStore;
 
-namespace UdemyMvcApp.Controllers
+namespace Rocky_Utility.Controllers
 {
     public class HomeController : Controller
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace UdemyMvcApp.Areas.Identity.Pages.Account
+namespace Rocky_Utility.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class LockoutModel : PageModel

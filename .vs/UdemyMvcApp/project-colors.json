@@ -10,7 +10,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "7758c1aa-53b5-4e01-99ce-22f8fd08d102": {
+      "ProjectGuid": "7758c1aa-53b5-4e01-99ce-22f8fd08d102",
+      "DisplayName": "Rocky_Model",
+      "ColorIndex": 1
+    },
+    "9ea53a86-a484-4930-beb8-c837318dc54f": {
+      "ProjectGuid": "9ea53a86-a484-4930-beb8-c837318dc54f",
+      "DisplayName": "Rocky_DataAccess",
+      "ColorIndex": 2
+    },
+    "2c3b166c-45c8-42ab-8fc7-9d9ac929d262": {
+      "ProjectGuid": "2c3b166c-45c8-42ab-8fc7-9d9ac929d262",
+      "DisplayName": "Rocky_Utility",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

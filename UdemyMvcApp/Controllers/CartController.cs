@@ -9,12 +9,11 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using UdemyMvcApp.DataStore;
-using UdemyMvcApp.Models;
-using UdemyMvcApp.Models.ViewModel;
-using UdemyMvcApp.Utility;
+using Rocky_Utility.Models;
+using Rocky_Model.ViewModel;
+using Rocky_DataAccess.DataStore;
 
-namespace UdemyMvcApp.Controllers
+namespace Rocky_Utility.Controllers
 {
     [Authorize]
     public class CartController : Controller

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using UdemyMvcApp.DataStore;
-using UdemyMvcApp.Models;
+using Rocky_Utility.Models;
+using Rocky_DataAccess.DataStore;
 
-namespace UdemyMvcApp.Controllers
+namespace Rocky_Utility.Controllers
 {
     public class CategoryController : Controller
     {

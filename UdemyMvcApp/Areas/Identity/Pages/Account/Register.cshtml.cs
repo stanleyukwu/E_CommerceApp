@@ -13,9 +13,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using UdemyMvcApp.Models;
+using Rocky_Utility;
+using Rocky_Utility.Models;
 
-namespace UdemyMvcApp.Areas.Identity.Pages.Account
+namespace Rocky_Utility.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterModel : PageModel

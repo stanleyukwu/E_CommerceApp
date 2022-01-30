@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace UdemyMvcApp
+namespace Rocky_Utility
 {
     public class Program
     {

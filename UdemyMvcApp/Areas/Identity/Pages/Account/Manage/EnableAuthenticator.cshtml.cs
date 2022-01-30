@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace UdemyMvcApp.Areas.Identity.Pages.Account.Manage
+namespace Rocky_Utility.Areas.Identity.Pages.Account.Manage
 {
     public class EnableAuthenticatorModel : PageModel
     {
@@ -148,7 +148,7 @@ namespace UdemyMvcApp.Areas.Identity.Pages.Account.Manage
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("UdemyMvcApp"),
+                _urlEncoder.Encode("Rocky_Utility"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }
